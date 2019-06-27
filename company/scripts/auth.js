@@ -52,7 +52,7 @@ loginForm.addEventListener('submit', (e) => {
     // document.cookie="userid="+uid
     uid=firebase.auth().currentUser.uid;
     localStorage.setItem("userid", uid);
-    window.location.replace("../authenticated/index.html");
+    window.location.replace("../authenticated/");
 
 	swal("Login sucessful!", "Welcome back", "success");
   }).catch(function(error) {
